@@ -8,6 +8,8 @@ setup(
     packages=find_packages(), #[package_name],
     data_files=[
         ('share/' + package_name, ['package.xml']),
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
     ],
     install_requires=[
         'setuptools',
